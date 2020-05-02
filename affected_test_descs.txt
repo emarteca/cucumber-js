@@ -1,0 +1,18 @@
+Configuration no argv returns the default configuration
+Configuration path to a feature returns the appropriate feature and support code paths
+Configuration path to a nested feature returns the appropriate feature and support code paths
+Configuration formatters adds a default
+Configuration formatters splits relative unix paths
+Configuration formatters splits absolute unix paths
+Configuration formatters splits absolute windows paths
+Configuration formatters does not split absolute windows paths without an output
+Configuration formatOptions joins the objects
+JsonFormatter no features outputs an empty array
+JsonFormatter one scenario with one step passed outputs the feature
+JsonFormatter one scenario with one step retried only outputs the last attempt
+JsonFormatter one scenario with one step failed includes the error message
+JsonFormatter one scenario with one step without a step definition does not output a match attribute for the step
+JsonFormatter one scenario with one step with hooks outputs the hooks with special properties
+JsonFormatter one scenario with one step with a doc string outputs the doc string as a step argument
+JsonFormatter one scenario with one step  with a data table string outputs the data table as a step argument
+JsonFormatter one rule with several examples (scenarios) passed outputs the feature
